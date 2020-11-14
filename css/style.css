@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #ffffff;
   font-family: 'Roboto', sans-serif;
@@ -35,10 +39,8 @@ img {
 
 a {
   color: #AEBCCF;
-  text-decoration: none; /* No underlining */
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  /* text-decoration: none; No underlining */
+  font-weight: 400;
 }
 
 a:visited { /* visited link */
@@ -63,6 +65,10 @@ a:active { /* selected link */
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #5F6B85;
   padding: 12px 24px 12px 24px ;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 1px;
   border-radius: 3px;
   transition: 0.2s opacity;
   color: #ffffff !important;
@@ -77,11 +83,83 @@ a:active { /* selected link */
   background-color: transparent;
   color: #5F6B85 !important;
   text-transform: uppercase;
-  border: 2px solid #8695AD
+  border: 2px solid #8695AD;
   ;
 }
 
 .button.contact:hover {
-  background-color: #D9E5EF;
+  background-color: #F5F6F7;
   opacity: 1;
+}
+
+
+/* Layout styling */
+header {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  box-shadow: 0px 6px 8px 4px rgba(44, 47, 51, 0.120);
+  background-color: #ffffff;
+  padding: 16px 0px 0px 16px; 
+}
+
+a.logo{
+  font-size: 1.2em;
+  font-weight: 900;
+  color: #2C2F33;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.row {
+  margin: 24px 0; /* 25px top and bottom, 0 left and right */
+}
+
+#work .row { padding-bottom: 24px; border-bottom: 1px solid #8D9094; }
+
+#hero h1 {
+  text-align: center; /* Centers text */
+}
+
+nav{
+  display: inline-block;
+  width: 100%;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #5F6B85 !important;
+  text-decoration: none;
+}
+
+nav > ul > li > a:hover{
+  color: #AEBCCF !important;
+}
+
+#hero {
+  background-color: #D9E5EF;
+  margin: 0;
+  padding: 24px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+main {
+  padding-top: 100px;
 }
