@@ -40,21 +40,23 @@ a {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-a:hover {
-  color: #AEBCCF;
-  text-decoration: underline; /* Underlining when hovering over a link */
-}
 
 a:visited { /* visited link */
-  color: #5F6B85;
+  color: #AEBCCF;
 }
-a:active { /* selected link */
+
+a:hover {
   color: #5F6B85;
+  text-decoration: underline; /* Underlining when hovering over a link */
 }
 
 a:focus {
   color: #5F6B85;
   text-decoration: underline;
+}
+
+a:active { /* selected link */
+  color: #5F6B85;
 }
 
 .button {
@@ -69,15 +71,6 @@ a:focus {
 .button:hover {
   opacity: 0.85; /* Reduces the opacity of the button to 85% */
   text-decoration: none;
-}
-
-.button:active{ /* selected button */
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #5F6B85;
-  padding: 12px 24px 12px 24px ;
-  border-radius: 3px;
-  transition: 0.2s opacity;
-  color: #ffffff !important;
 }
 
 .button.contact {
