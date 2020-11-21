@@ -237,6 +237,7 @@ margin: 0px 8px;
   margin: 40px 0px;
 }
 
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -258,6 +259,9 @@ Medium devices (640px and larger)
     padding: 40px;
   }
 
+  .skills_tools{
+    padding: 0px 40px 0px 0px;
+  }
 }
 
 /* ==============================
