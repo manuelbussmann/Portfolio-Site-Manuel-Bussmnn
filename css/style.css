@@ -71,6 +71,11 @@ img {
   width: 100%;
 }
 
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
 /* ==============================
 Links and Buttons
 ================================= */
@@ -114,6 +119,9 @@ a:active {
   border-radius: 3px;
   transition: 0.2s opacity;
   color: #ffffff !important;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
 }
 
 .button:hover {
@@ -121,15 +129,15 @@ a:active {
   text-decoration: none;
 }
 
-.button.contact {
+.contact {
   background-color: transparent;
   color: #5F6B85 !important;
   text-transform: uppercase;
   border: 2px solid #8695AD;
-  ;
+  margin: 8px;
 }
 
-.button.contact:hover {
+.contact:hover {
   background-color: #F5F6F7;
   opacity: 1;
 }
@@ -138,13 +146,12 @@ a:active {
 Header
 ================================= */
 header {
-  display: inline-block;
   width: 100%;
   text-align: center;
   position: fixed;
   box-shadow: 0px 6px 8px 4px rgba(44, 47, 51, 0.120);
   background-color: #ffffff;
-  padding: 16px 0px 0px 16px;
+  padding: 16px 0px;
 }
 
 a.logo {
@@ -160,12 +167,14 @@ a.logo {
 
 nav {
   display: inline-block;
-  width: 100%;
+  width: auto;
+  margin-top: 16px;
 }
 
 nav>ul {
   list-style-type: none;
-  padding: 0;
+  padding: 0px;
+  margin: 0px;  
 }
 
 nav>ul>li {
@@ -198,7 +207,10 @@ footer {
 
 .contact {
   min-width: 190px;
-  margin: 0px 16px 16px 16px;
+  }
+
+.section{
+  padding: 40px 0px;
 }
 
 .container {
@@ -209,6 +221,10 @@ footer {
 .column {
   max-width: 100%;
   padding: 0px;
+}
+
+.contact_links{
+  padding: 8px;
 }
 
 /* ==============================
@@ -232,13 +248,19 @@ Home
   width: 100%;
 }
 
+#hero span{
+  display: block;
+  font-weight: 300;
+  margin-top: 8px;
+}
+
 main {
   padding-top: 100px;
 }
 
 .svg-animation svg {
   max-width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 #fly {
@@ -300,22 +322,18 @@ Medium devices (640px and larger)
   nav {
     width: auto;
     float: right;
-    margin-top: -16px;
+    margin-top: 0px;
   }
 
   main {
-    padding-top: 56px;
+    padding-top: 64px;
   }
 
   body {
     font-size: 20px;
   }
 
-  .row {
-    display: flex;
-  }
-
-  .container {
+   .container {
     padding: 0 16px;
     margin-left: auto;
     margin-right: auto;
@@ -325,8 +343,7 @@ Medium devices (640px and larger)
 
   .col-md-6 {
     width: 50%;
-    padding: 20px;
-  }
+    }
 
   .column {
     padding: 40px;
@@ -348,6 +365,9 @@ Large devices (1024px or larger)
     padding: 20px;
   }
 
+  .button{
+    width: auto;
+  }
 }
 
 
@@ -355,12 +375,7 @@ Large devices (1024px or larger)
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
-  .row-about {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .skills_tools {
-    max-width: 50%;
+  .row{
+  display: flex;
   }
 }
