@@ -161,7 +161,7 @@ a.logo {
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 1px;
-  outline: 3px solid #E1E3E5;
+  outline: 3px solid #5F6B85;
   
 }
 
@@ -181,6 +181,7 @@ nav>ul>li>a {
 
 nav>ul>li>a:hover {
   color: #AEBCCF !important;
+  text-decoration: none;
 }
 
 .navtoggle li:not(:last-child) {
